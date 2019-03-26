@@ -1,0 +1,238 @@
+/*
+
+  Theme Name: PlantillaWP
+  Author: José Sánchez Aranda
+  Author URI: https://www.josesaranda.es
+  Version: 1.0
+*/
+
+/* General classes and styles */
+
+html{
+  font-size: 1em;
+  line-height: 1.4;
+  color: #292929;
+}
+
+*, body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding : 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* container */
+
+.container{
+  max-width: 1100px;
+  width : 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header{
+  background-color: #a00622;
+  height: 100px;
+}
+
+header .logo {
+  width: 400px;
+  float:left;
+}
+
+header nav {
+  float: right;
+  line-height: 100px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li{
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li.current_page_item {
+  border-bottom: 2px solid white;
+}
+
+header nav ul li a {
+  color : white;
+  text-decoration: none;
+}
+
+/* Page ... */
+
+#primary {
+  float:left;
+  width: 720px;
+}
+
+img.wp-post-image{
+  width: 100%;
+  height: auto;
+}
+
+.blog img.wp-post-image{
+  width: auto;
+  height: auto;
+}
+
+#secondary{
+  float:right;
+  width: 370px;
+  margin-left: 10px;
+}
+
+.fav{
+  position: relative;
+}
+
+.fav h2 {
+  position: absolute;
+  float:left;
+  bottom:10px;
+  background: #a00622;
+  padding: 10px 15px;
+  color: white;
+}
+
+h2.no-image {
+  color : #a00622;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid #a00622;
+  margin-top: 10px;
+}
+
+/* Sidebar */
+
+#testimonials h3{
+  color: #a00622;
+  font-size: 20px;
+}
+
+#testimonials .textwidget {
+  font-size: 20px;
+  line-height: 34px;
+  color: #767676;
+  background-image: url(images/svg_comilla.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 90px;
+}
+
+#testimonials .textwidget span {
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+/* Footer */
+
+footer {
+  clear: both;
+}
+
+footer nav {
+  float: left;
+  width: 500px;
+  margin-top: 30px;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer nav ul li a {
+  color: #a00622;
+  text-decoration: none;
+}
+
+footer .copyright {
+  border-top : 3px solid #a00622;
+}
+
+footer .copyright p {
+  color: #a00622;
+  text-align: center;
+}
+
+/* Toronto guide */
+
+.primary.blog{
+  margin-top: 10px;
+}
+
+.content {
+  padding: 10px 0px;
+}
+
+.post-guide {
+  float:left;
+  width: 340px;
+  margin: 0px 10px;
+}
+
+.post-guide .image{
+  position: relative;
+}
+
+.post-guide .image img{
+  width: 100%;
+}
+
+.post-guide .content h3{
+  margin: 0;
+  padding: 0;
+  color: #a00622;
+}
+
+.post-guide .content p {
+  color: #000;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.post-guide .content a {
+  float: right;
+  background-color: #a00622;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding:5px;
+  border-radius: 6px;
+}
+
+.post-guide .image .category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.category ul {
+  list-style: none;
+}
+
+.category ul li {
+  background-color: #a00622;
+  padding: 3px 5px;
+}
+
+.category ul li a {
+  text-decoration: none;
+  color : white;
+  text-transform: lowercase;
+}
