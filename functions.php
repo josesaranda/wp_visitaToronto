@@ -2,7 +2,12 @@
 //function to add theme scripts
 function theme_scripts(){
   wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css');
+  wp_enqueue_style( 'bxslider', get_template_directory_uri() . '/css/jquery.bxslider.min.css');
   wp_enqueue_style( 'style', get_stylesheet_uri());
+
+  wp_enqueue_script('jquery');
+  wp_enqueue_script('bxsliderjs',get_template_directory_uri() . '/js/jquery.bxslider.min.js', array('jquery'), '4.0', true);
+  wp_enqueue_script('scripts',get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true);
 }
 //hook to theme scripts
 add_action('wp_enqueue_scripts', 'theme_scripts');
@@ -30,6 +35,16 @@ function theme_widgets() {
     'description' => 'widgets of testimonials',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>'
+  ));
+
+  register_sidebar(array(
+    'name' => __('Main page images'),
+    'id' => 'front-page',
+    'description' => 'widgets of main page images',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>'
   ));

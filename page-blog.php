@@ -18,7 +18,7 @@ get_header(); ?>
       <?php
 
       $args = array(
-        'cat' => array(3,4,5,6),
+        'category__in' => array(3,4,5,6),
         'post_per_page' => 6,
         'orderby' => 'date',
         'order' => 'DESC',
@@ -42,8 +42,9 @@ get_header(); ?>
           <a href="<?php the_permalink(); ?>">Leer más</a>
           <div class="clear"></div>
           <div class="info-post">
-            <p class="author">Por: <?php the_author(); ?></p>
+            <p class="author">Por: <span><?php the_author(); ?></span></p>
             <p class="date"><?php the_time(get_option('date_format')); ?></p>
+            <div class="clear"></div>
           </div>
         </div>
       </div>
