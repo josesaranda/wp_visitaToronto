@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="pingback" href="<?php bloginfo('pingback_url') ?>">
-    <title>visitaToronto</title>
+    <title><?php wp_title(''); if(wp_title('',false)){ echo ' | '; } bloginfo('name');?></title>
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
