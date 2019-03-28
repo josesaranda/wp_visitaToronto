@@ -137,35 +137,36 @@ h2.no-image {
 
 /* Footer */
 
-footer {
+footer.site-footer {
   clear: both;
 }
 
-footer nav {
+footer.site-footer nav {
   float: left;
   width: 500px;
   margin-top: 30px;
 }
 
-footer nav ul {
+footer.site-footer nav ul {
   list-style: none;
 }
 
-footer nav ul li {
+footer.site-footer nav ul li {
   display: inline-block;
   margin-right: 20px;
+  background-color: transparent;
 }
 
-footer nav ul li a {
+footer.site-footer nav ul li a {
   color: #a00622;
   text-decoration: none;
 }
 
-footer .copyright {
+footer.site-footer .copyright {
   border-top : 3px solid #a00622;
 }
 
-footer .copyright p {
+footer.site-footer .copyright p {
   color: #a00622;
   text-align: center;
 }
@@ -416,4 +417,15 @@ div.advices {
 
 #slider .bx-wrapper .bx-pager.bx-default-pager a.active {
   background-color: #a00622;
+}
+
+/* Category */
+
+a.more-link {
+  background-color: #a00622;
+  color : white;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  float:right;
 }
